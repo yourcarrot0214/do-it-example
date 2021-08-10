@@ -23,6 +23,7 @@
     "selector-action": "^1.1.1"
   },
   "scripts": {
+    "storybook": "start-storybook -p 9001 -c .storybook",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -49,6 +50,7 @@
     "@babel/plugin-syntax-object-rest-spread": "^7.2.0",
     "@storybook/addon-actions": "^5.2.6",
     "@storybook/addons": "^5.2.6",
+    "@storybook/preset-create-react-app": "^3.2.0",
     "@storybook/react": "^5.2.6",
     "aphrodite": "^2.2.3",
     "babel-loader": "^8.0.5",
