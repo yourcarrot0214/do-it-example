@@ -28,6 +28,7 @@ class Button extends PureComponent {
           secondary && styles.secondary,
           primary && styles.primary,
         )}
+        disabled={disabled}
         onClick={onPress}
       >
         {children}
@@ -38,6 +39,7 @@ class Button extends PureComponent {
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
+  disabled: PropTypes.bool,
   xsmall: PropTypes.bool,
   small: PropTypes.bool,
   large: PropTypes.bool,

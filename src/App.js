@@ -5,6 +5,9 @@ import Text from './04/Text';
 import Button from './04/Button';
 import withHoC from './05/withHoC';
 import withLoading from './05/withLoading';
+import BranchLoadingButton from './05/branch';
+import { CounterWithCountState } from './05/withState';
+import { PageWithLoadData } from './05/lifecycle';
 
 const ButtonWithHoC = withHoC(Button);
 const TextWithHoC = withHoC(Text);
@@ -45,8 +48,14 @@ function App() {
       </Button>
       <TextWithHoC>TextWithHoC</TextWithHoC>
       <Text>Text</Text> */}
-      <ButtonWithLoading isLoading>로딩 버튼</ButtonWithLoading>
-      <ButtonWithLoading>로딩완료</ButtonWithLoading>
+      {/* <ButtonWithLoading isLoading>로딩 버튼</ButtonWithLoading>
+      <ButtonWithLoading primary xlarge>
+        로딩완료
+      </ButtonWithLoading> */}
+      {/* <BranchLoadingButton isLoading>isLoading</BranchLoadingButton>
+      <BranchLoadingButton primary>Landing</BranchLoadingButton> */}
+      {/* <CounterWithCountState /> */}
+      <PageWithLoadData loadData={() => fetch('/').then(() => 'fetch data')} />
     </>
   );
 }
